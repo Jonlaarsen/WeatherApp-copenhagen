@@ -1,0 +1,51 @@
+* {
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(96, 96, 86);
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(135deg, rgb(233, 233, 124), rgb(75, 75, 194));
+    color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 40px 50px;
+    text-align: center;
+}
+.weatherIcon{
+    width: 180px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+.weather h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.col img{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.dateTime{
+    color: beige;
+    margin-top: 30px;
+}
