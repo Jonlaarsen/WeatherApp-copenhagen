@@ -3,6 +3,7 @@ let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=copenhagen&appid
 let weatherIcon = document.querySelector(".weatherIcon");
 let weatherStatus = document.querySelector(".status")
 
+// function to check weather temp windsped and etc also changes icon and status
 
 function checkWeather(){
 
@@ -46,6 +47,9 @@ function showWeather(data){
    }  
       
 }; 
+
+//function to get copenhagen time
+
 };
 function timeDate(){
     let date = new Date();
@@ -57,8 +61,8 @@ function timeDate(){
 
 checkWeather(); 
 
-setInterval(timeDate, 1000)
-setInterval(checkWeather, 72000)
+setInterval(timeDate, 1000);
+setInterval(checkWeather, 3600000);
 
 
 
