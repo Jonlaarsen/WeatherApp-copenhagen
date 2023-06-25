@@ -1,6 +1,8 @@
 let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=copenhagen&appid=678a37326b918bb23b524b306b1532aa&units=metric"
 
-const weatherIcon = document.querySelector(".weatherIcon");
+let weatherIcon = document.querySelector(".weatherIcon");
+let weatherStatus = document.querySelector(".status")
+
 
 function checkWeather(){
 
@@ -25,18 +27,22 @@ function showWeather(data){
 
     if(data.weather[0].main == "Clouds"){
         weatherIcon.src = "cloudy.png"
+        weatherStatus.innerHTML = "Cloudy"
    }
    else if(data.weather[0].main == "Clear"){
         weatherIcon.src = "sun.png"
    }
    else if(data.weather[0].main == "Rain"){
         weatherIcon.src = "rainy.png"
+        weatherStatus.innerHTML = "Rain"
    }
    else if(data.weather[0].main == "Drizzle"){
         weatherIcon.src = "cloudy-2.png"
+        weatherStatus.innerHTML = "Drizzle"
    }
    else if(data.weather[0].main == "Snow"){
         weatherIcon.src = "snowy.png"
+        weatherStatus.innerHTML = "Snow"
    }  
       
 }; 
